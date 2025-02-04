@@ -18,7 +18,7 @@ const Login = () => {
     try {
       // "http://localhost:5000/login"
       // `${API_URL}/login`
-      const response = await fetch("http://localhost:5000/login", {
+      const response = await fetch("https://moringaz-safe-haven-backend.onrender.com/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -26,7 +26,7 @@ const ChatBox = () => {
         // `${API_URL}/send_message`
         // "http://localhost:5000/send_message"
         await axios.post(
-          "http://localhost:5000/send_message",
+          "https://moringaz-safe-haven-backend.onrender.com/send_message",
           {
             outgoing_id: userId,
             msg: message,
@@ -48,7 +48,7 @@ const ChatBox = () => {
       // `${API_URL}/get_messages`
       // "http://localhost:5000/get_messages",
       const response = await axios.post(
-        "http://localhost:5000/get_messages",
+        "https://moringaz-safe-haven-backend.onrender.com/get_messages",
         { incoming_id: userId },
         { headers: { Authorization: `Bearer ${token}` } }
       );

@@ -27,7 +27,7 @@ const UsersList = () => {
       try {
         const token = localStorage.getItem("token");
         // "http://localhost:5000/profile"
-        const response = await axios.get("http://localhost:5000/profile", {
+        const response = await axios.get("https://moringaz-safe-haven-backend.onrender.com/profile", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setLoggedInUser(response.data);
@@ -40,7 +40,7 @@ const UsersList = () => {
       try {
         const token = localStorage.getItem("token");
         // "http://localhost:5000/chats"
-        const response = await axios.get("http://localhost:5000/chats", {
+        const response = await axios.get("https://moringaz-safe-haven-backend.onrender.com/chats", {
           headers: { Authorization: `Bearer ${token}` },
         });
         setUsers(response.data.users);

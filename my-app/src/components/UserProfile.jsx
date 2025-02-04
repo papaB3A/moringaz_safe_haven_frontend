@@ -27,7 +27,7 @@ export default function UserProfile() {
       try {
         // `${API_URL}/profile`
         // "http://localhost:5000/profile"
-        const response = await axios.get("http://localhost:5000/profile", {
+        const response = await axios.get("https://moringaz-safe-haven-backend.onrender.com/profile", {
           headers: {
             Authorization: `Bearer ${token}`
           }
