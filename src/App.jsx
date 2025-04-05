@@ -9,10 +9,13 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import SignUp from './components/SignUp';
 import ChatBox from './components/ChatBox';
 
+import UploadImage from './components/UploadImage';
+
 export default function App(){
   return (
     <>
-      <BrowserRouter>
+      <UploadImage/>
+      {/* <BrowserRouter>
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/sign-up" element={<SignUp />} />
@@ -22,10 +25,9 @@ export default function App(){
             <Route path="/aboutUs" element={<AboutUs />} />
             <Route path="/chats" element={<UsersList />} />
             <Route path="/chats/:userId" element={<ChatBox />} />
-            {/* <Route path="/resources" element={ <Resources/> } /> */}
           </Route>
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </>
   );
 }
